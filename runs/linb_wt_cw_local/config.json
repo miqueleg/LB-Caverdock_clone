@@ -1,0 +1,16 @@
+{
+  "pipeline": {
+    "vina_bin": "/home/mestevez/Programs/Autodock4/vina_1.2.7_linux_x86_64",
+    "exhaustiveness": 8,
+    "num_modes": 1,
+    "cpu": 2,
+    "margin": 2.0,
+    "seed": null,
+    "lb_mode": "local",
+    "min_box_size": 10.0
+  },
+  "receptor_input": "data/linb_wt/receptor.pdb",
+  "ligand_input": "data/dbe.pdb",
+  "caver_output_dir": "data/linb_wt/caver_out",
+  "tunnel_index": 1
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<line x1="70" y1="370" x2="880" y2="370" stroke="#000"/>
+<line x1="70" y1="20" x2="70" y2="370" stroke="#000"/>
+<text x="450.0" y="410" text-anchor="middle" font-family="sans-serif" font-size="14">Distance along tunnel (Å)</text>
+<text x="15" y="195.0" transform="rotate(-90 15,195.0)" text-anchor="middle" font-family="sans-serif" font-size="14">Energy (kcal/mol)</text>
+<text x="450.0" y="15" text-anchor="middle" font-family="sans-serif" font-size="16">Lower-bound: Vina vs CaverDock</text>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2" points="70.0,365.9 76.6,365.9 106.3,365.9 132.7,365.8 162.7,365.2 188.2,364.9 216.0,360.1 239.7,362.6 268.3,361.2 289.0,360.3 319.6,360.1 340.7,360.2 361.1,360.7 389.7,361.6 414.2,20.0 444.1,340.5 471.8,365.8 496.4,366.5 522.3,367.0 548.3,367.7 572.0,368.2 596.9,368.9 621.3,369.3 644.9,369.6 669.8,369.8 685.3,369.8 712.9,369.8 734.8,369.9 763.6,369.9 782.7,369.9 809.5,369.9 827.2,369.8 850.3,370.0 880.0,369.8" />
+<polyline fill="none" stroke="#2ca02c" stroke-width="2" points="70.0,363.5 76.6,363.3 106.3,361.3 132.7,360.7 162.7,360.4 188.2,360.4 216.0,361.0 239.7,361.5 268.3,361.5 289.0,361.8 319.6,361.8 340.7,361.8 361.1,361.3 389.7,361.5 414.2,362.7 444.1,363.5 471.8,364.7 496.4,365.5 522.3,366.4 548.3,367.0 572.0,367.0 596.9,367.2 621.3,367.2 644.9,367.5 669.8,367.8 685.3,367.8 712.9,368.4 734.8,368.4 763.6,368.1 782.7,368.1 809.5,368.1 827.2,368.4 850.3,368.1 880.0,368.4" />
+<rect x="80" y="25" width="220" height="40" fill="#ffffff" stroke="#ccc"/>
+<line x1="90" y1="40" x2="120" y2="40" stroke="#1f77b4" stroke-width="3"/>
+<text x="130" y="45" font-family="sans-serif" font-size="12">Vina per-disc (LB)</text>
+<line x1="90" y1="58" x2="120" y2="58" stroke="#2ca02c" stroke-width="3"/>
+<text x="130" y="63" font-family="sans-serif" font-size="12">CaverDock LB</text>
+</svg>

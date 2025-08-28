@@ -1,0 +1,11 @@
+starting_point_residue A:38 A:108 A:109 A:132 A:134 A:143 A:144 A:145 A:146 A:147 A:151 A:169 A:173 A:177 A:207 A:208 A:211 A:245 A:246 A:247 A:248 A:250 A:271 A:272 A:273
+
+probe_radius 0.9
+shell_depth 4.0
+shell_radius 3.0
+clustering_threshold 3.5
+max_distance 3.0
+desired_radius 5.0
+visualization_tunnel_sampling_step 0.5
+seed 1
+

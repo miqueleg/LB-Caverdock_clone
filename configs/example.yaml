@@ -1,0 +1,16 @@
+receptor: data/receptor.pdb
+ligand: data/ligand.pdb
+caver_output: data/caver_out
+out_dir: runs/example
+vina:
+  bin: vina
+  exhaustiveness: 8
+  num_modes: 1
+  cpu: 1
+  margin: 2.0
+mgltools:
+  prepare_receptor_script: prepare_receptor4.py
+  prepare_ligand_script: prepare_ligand4.py
+  per_sphere_receptor: false
+  per_sphere_ligand: false
+caverdock_profile: data/caverdock_profile.csv

@@ -1,0 +1,17 @@
+name: linb_wt_dbe
+receptor: data/linb_wt/receptor.pdb
+ligand: data/dbe.pdb
+caver_output: data/linb_wt/caver_out
+out_dir: runs/linb_wt
+vina:
+  bin: vina
+  exhaustiveness: 16
+  num_modes: 1
+  cpu: 4
+  margin: 2.0
+mgltools:
+  prepare_receptor_script: prepare_receptor4.py
+  prepare_ligand_script: prepare_ligand4.py
+  per_sphere_receptor: false
+  per_sphere_ligand: false
+caverdock_profile: data/linb_wt/caverdock_profile.csv

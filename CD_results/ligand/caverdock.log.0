@@ -1,0 +1,225 @@
+#################################################################
+# If you used CaverDock in your work, please cite:              #
+#                                                               #
+# J. Filipovic et al.                                           #
+# CaverDock: A Novel Method for the Fast Analysis of Ligand     #
+# Transport. IEEE/ACM Transactions on Computational Biology and #
+# Bioinformatics. 2019.                                         #
+# DOI  10.1109/TCBB.2019.290749                                 #
+#                                                               #
+# O. Vavra et al.                                               #
+# CaverDock: A Molecular Docking-Based Tool to Analyse Ligand   #
+# Transport through Protein Tunnels and Channels.               #
+# Bioinformatics 2019.                                          #
+# DOI  10.1093/bioinformatics/btz386                            #
+#                                                               #
+#################################################################
+
+Version information: CaverDock 1.2 (May 2022)
+using docking engine based on AutoDock Vina 1.1.2
+git commit release
+Reading input ... done.
+
+EXPERIMENT SETUP
+Docking options
+  receptor          /home/user/input_0.pdbqt
+  flex              
+  ligand            /home/user/ligand.pdbqt
+  center_x          21.0557
+  center_y          35.0279
+  center_z          0.63864
+  size_x            14
+  size_y            13
+  size_z            15
+  out               analysis
+  exhaustiveness    1
+  cpu               1
+  log               caverdock.log.0
+Tunnel analysis options
+  tunnel                    /home/user/data/tunnel.dsd
+  final state               LB
+  optimization_strategy     MAX
+  dock_like                 
+  dock_like_limit           2
+  dump_bottlenecks          
+  dump_energies             
+  dump_energies_thr         6.52469e-310
+  backtrack_threshold       1
+  backtrack_limit           5
+  multiple_search        4
+  cont_threshold            0.8
+  radius_ratio              -1
+  pattern_limit             0.6
+  allow_flex_discontinuity  0
+  parallel_workers_lb       4
+  parallel_workers_smooth   4
+  early_exit                0
+Advanced and constrained docking options
+  score_only          0
+  local_only          0
+  randomize_only      0
+  weight_gauss1       -0.035579
+  weight_gauss2       -0.005156
+  weight_repulsion    0.840245
+  weight_hydrophobic  -0.035069
+  weight_hydrogen     -0.587439
+  weight_rot          0.05846
+  catomnum            1
+  ctemplate           
+  ctemplate_limit     0.5
+
+EXPERIMENT SETUP END
+Master up...
+STATE: 0
+STATE: 1
+TRAJECTORY: begining lower-bound computation.
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 1, assigned: 0
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 1
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 0
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 4, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 0
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 3, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 5, assigned: 5
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 5, assigned: 4
+cScheduler::step(): conformations computed: 3, assigned: 3
+STATE: 1
+TRAJECTORY: lower-bound COMPUTED.
+STATE: 3
+Master is closing parallel session...
+cScheduler::finishWork(), number of WP's processed: 136, received snapshots: 363, asigned snapshots: 332
+
+=========================================
+CaverDock run summary
+
+CaverDock started on 2025-08-27 17:15:53 and ran on 583a7020-ade9-4d8e-b450-0e6c127e1931-n42hm with 2 MPI processes.
+LB computation took 0 hours, 1 minutes and 32 seconds.
+UB computation took 0 hours, 0 minutes and 0 seconds.
+Total computation time 0 hours, 1 minutes and 32 seconds.
+CaverDock execution has been successfully completed.

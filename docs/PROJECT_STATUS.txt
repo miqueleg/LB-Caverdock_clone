@@ -1,0 +1,102 @@
+CaverDock Lower-Bound (Vina-based) — Project Status
+===================================================
+
+Overview
+--------
+Goal: reproduce CaverDock-style lower-bound (LB) energy profiles using Vina + AutoDockTools + CAVER3, with an interface to test per-disc charge/placement strategies. Also enable strict per-disc placement to keep the ligand inside each tunnel sphere and near its center.
+
+What’s implemented
+------------------
+Core library (src/caverdock_lowerbound/):
+- caver.py: parse CAVER 3 outputs (analysis/tunnel_profiles.csv), write tunnel PDBs.
+- discretizer.py: resample a centerline profile into equally spaced discs; write/read DSD.
+- vina.py: Vina wrappers (dock, local_only, score_only); flexible scoring selector.
+- charge_providers.py: pluggable per-disc PDBQT preparation strategies (MGLTools Gasteiger; static).
+- ligand_geom.py: read/write PDBQT coords; compute/translate centroid.
+- pipeline.py: high-level orchestration (CAVER → discretize or take DSD → prep → per-disc Vina → profiles/plots/tunnel PDB). Always writes tunnel.dsd and tunnel.pdb.
+
+CLI + scripts:
+- caverdock-lb (src/caverdock_lowerbound/cli.py): full pipeline runner and CAVER launcher.
+- run_lb_on_cd_discs.py: per-disc Vina runner using a given DSD (CaverDock/CaverWeb discs).
+  Modes:
+  - independent: Vina per-disc docking with a standard box (2R + margin, min size), Vina chooses pose.
+  - independent_tight: Vina per-disc docking with a tight box (clamped to disc size), Vina chooses pose. With strict filtering, only accepts poses with COM near center and atoms inside sphere (R + tol); otherwise falls back to a minimal local refinement.
+  - centered_local: recenter + local_only cycles + score; kept for investigation only.
+- export_tunnel_pdb.py: export tunnel centerline PDB from CAVER 3 or DSD.
+- compare_vina_vs_cd_lb.py / plot_lb_svg.py: plot Vina LB vs CaverDock LB (distance-aligned); SVG backend.
+- export_cd_lb_csv.py: extract CaverDock LB energies from analysis-lb.pdbqt.
+- profile_rmsd.py: compute energy RMSD between Vina LB and CaverDock LB.
+- tune_vina_params.py: parameter sweep (scoring, exhaustiveness, margin/min-box) minimizing energy RMSD.
+- tune_vina_com.py: parameter sweep minimizing COM RMS distance to disc center for per-disc strict placement.
+
+What we tested (LinB WT + DBE)
+-------------------------------
+Inputs used:
+- Discs: CW_tunnel.dsd (CaverWeb tunnel) — guarantees shared distance axis.
+- Receptor/Ligand: data/linb_wt/receptor.pdb, data/dbe.pdb → MGLTools prepare_* to PDBQT.
+- CaverDock LB reference: CD_results/ligand/analysis-lb.pdbqt.
+
+Results summary (RMSD energy vs CaverDock LB):
+- independent (tuned): scoring=vinardo, exhaustiveness=16, margin=1.5 Å, min_box=8.0 Å → RMSD ≈ 1.08 kcal/mol. Path: runs/linb_wt_cw_tune/best_compare.svg
+- centered_local (tangent-aligned + roll starts, local-only): → RMSD ≈ 0.76 kcal/mol (good match but applies alignment moves not desired for pure Vina orientation).
+- independent_tight (default tight box): → RMSD ≈ 1.51 kcal/mol. Path: runs/linb_wt_cw_indep_tight/compare_lb_lb.svg
+- independent_tight_strict (COM ≤ 0.75 Å; inside ≤ R + 0.5 Å): → RMSD ≈ 3.53 kcal/mol (positional fidelity high, energy further from CD LB). Path: runs/linb_wt_cw_indep_tight_strict.
+
+COM-centric tuning (strict placement)
+-------------------------------------
+- Script: scripts/tune_vina_com.py sweeps tight box and strict tolerances to minimize COM RMS distance.
+- Best COM RMS found: ≈ 2.34 Å at tight_margin=0.25 Å; tight_min_box=8.0 Å; tight_max_box=12.0 Å; strict_com_tol=1.0 Å; strict_shell_tol=0.5 Å.
+- Using those settings in independent_tight yields energy RMSD ≈ 3.53 kcal/mol (poses inside spheres and near centers, but energetically stricter). Path: runs/linb_wt_cw_indep_tight_COMbest.
+
+Artifacts to inspect
+--------------------
+- WT runs (examples; see runs/ for more):
+  - runs/linb_wt_cw_tune: energy tuning (independent); tuning_results.csv, best_compare.svg
+  - runs/linb_wt_cw_centered3: centered_local with tangent alignment + roll; compare_lb_lb.svg; RMSD ≈ 0.76
+  - runs/linb_wt_cw_indep_tight: tight independent; compare_lb_lb.svg; RMSD ≈ 1.51
+  - runs/linb_wt_cw_indep_tight_strict: strict filter; compare_lb_lb.svg; RMSD ≈ 3.53
+  - runs/linb_wt_cw_indep_tight_COMbest: COM-best settings; compare_lb_lb.svg; RMSD ≈ 3.53; includes com_dist per disc
+- All plots in SVG; both curves use CW_tunnel.dsd distances on x-axis.
+
+Key takeaways
+-------------
+- For energy similarity to CaverDock LB, the best independent Vina tuning (vinardo, ex=16, margin=1.5 Å, min_box=8.0 Å) reached RMSD ≈ 1.08 kcal/mol.
+- A “centered_local” variant (tangent + roll + local-only) reached ≈ 0.76 kcal/mol but enforces orientation moves; it’s useful diagnostically but not the pure per-disc Vina approach.
+- A strict per-disc constraint ensuring COM near center and full inclusion inside spheres places the ligand as desired, but increases energy RMSD (≈ 3.53 kcal/mol) relative to CaverDock LB.
+
+What remains / next steps
+-------------------------
+- AD4 scoring via autogrid4 + maps (or Vina --maps --score_only --scoring ad4):
+  - Build per-disc AD4 maps (prepare_gpf4.py + autogrid4), then score final poses with AD4 to better match CaverDock’s energy model.
+- Per-disc flexible receptor modeling or region masking to avoid metal-related artifacts (e.g., Mg); or pre-clean altlocs/metals.
+- Hybrid approach: independent tight docking + minimal local-only nudge to sphere center (one cycle) to balance energy and placement.
+- Extend COM and energy sweeps together to find better trade-offs.
+
+How to reproduce
+----------------
+- Prepare PDBQT once:
+  - Receptor: prepare_receptor4.py -r data/linb_wt/receptor.pdb -o runs/linb_wt/prep/receptor.pdbqt
+  - Ligand: prepare_ligand4.py   -l data/dbe.pdb            -o runs/linb_wt/prep/ligand.pdbqt
+- Run per-disc Vina on CW_tunnel.dsd (independent tight):
+  - PYTHONPATH=src python3 scripts/run_lb_on_cd_discs.py \
+    --mode independent_tight \
+    --dsd CW_tunnel.dsd \
+    --receptor-pdbqt runs/linb_wt/prep/receptor.pdbqt \
+    --ligand-pdbqt   runs/linb_wt/prep/ligand.pdbqt \
+    --out-dir runs/linb_wt_cw_indep_tight \
+    --vina-bin /path/to/vina \
+    --cpu 4 --exhaustiveness 8 --tight-margin 0.5 --tight-min-box 8.0 --tight-max-box 12.0
+- Export CaverDock LB and plot:
+  - python3 scripts/export_cd_lb_csv.py --pdbqt CD_results/ligand/analysis-lb.pdbqt --out-csv runs/linb_wt_cw_indep_tight/cd_lb_profile.csv
+  - python3 scripts/plot_lb_svg.py --vina-csv runs/linb_wt_cw_indep_tight/vina_profile.csv --cd-csv runs/linb_wt_cw_indep_tight/cd_lb_profile.csv --dsd CW_tunnel.dsd --out runs/linb_wt_cw_indep_tight/compare_lb_lb.svg
+- Compute energy RMSD:
+  - python3 scripts/profile_rmsd.py --vina-csv runs/.../vina_profile.csv --cd-csv runs/.../cd_lb_profile.csv
+- COM-centric tuning:
+  - python3 scripts/tune_vina_com.py --dsd CW_tunnel.dsd --receptor-pdbqt runs/linb_wt/prep/receptor.pdbqt --ligand-pdbqt runs/linb_wt/prep/ligand.pdbqt --vina-bin /path/to/vina --out-root runs/linb_wt_cw_com_tune --cpu 4
+
+Closing status
+--------------
+- We have a working pipeline (CAVER→discs or DSD→prep→Vina per-disc→profiles/plots) and multiple placement modes.
+- Best energy match so far with independent tuning (vinardo) ≈ 1.08 kcal/mol; strictly centered inside-sphere placement trades off energy similarity for positional fidelity.
+- Ready next steps: add AD4 map-based scoring, refine strictness/tightness sweeps, and extend to L177W with its corresponding tunnel and profiles.
+

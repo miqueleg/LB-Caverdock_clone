@@ -1,0 +1,12 @@
+REMARK  1 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_3  and  C_4 
+ROOT
+HETATM    1 Br   UNK     0      23.891  33.357  -2.432  0.00  0.00    -0.096 Br
+HETATM    2  C   UNK     0      23.298  34.901  -1.413  0.00  0.00     0.096 C 
+ENDROOT
+BRANCH   2   3
+HETATM    3  C   UNK     0      21.931  34.626  -0.823  0.00  0.00     0.096 C 
+HETATM    4 Br   UNK     0      21.585  35.877   0.623  0.00  0.00    -0.096 Br
+ENDBRANCH   2   3
+TORSDOF 1

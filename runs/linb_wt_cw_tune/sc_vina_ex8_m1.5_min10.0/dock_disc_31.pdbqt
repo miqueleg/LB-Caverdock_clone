@@ -1,0 +1,19 @@
+MODEL 1
+REMARK VINA RESULT:    -3.280      0.000      0.000
+REMARK INTER + INTRA:          -3.472
+REMARK INTER:                  -3.472
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  1 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_3  and  C_4 
+ROOT
+HETATM    1 Br   UNK     0      19.746  37.170   5.236  0.00  0.00    -0.096 Br
+HETATM    2  C   UNK     0      18.709  36.018   4.060  0.00  0.00     0.096 C 
+ENDROOT
+BRANCH   2   3
+HETATM    3  C   UNK     0      18.963  36.405   2.625  0.00  0.00     0.096 C 
+HETATM    4 Br   UNK     0      20.855  36.195   2.222  0.00  0.00    -0.096 Br
+ENDBRANCH   2   3
+TORSDOF 1
+ENDMDL

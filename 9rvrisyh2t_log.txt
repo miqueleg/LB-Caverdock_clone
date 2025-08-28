@@ -1,0 +1,2012 @@
+=> discretizer.log
+Init radius 2.3200000000000003, Optimized: 2.3199999999999967
+Init radius 2.4635149101649167, Optimized: 2.1100199804631408
+Init radius 2.0017078024511985, Optimized: 1.9077769537372866
+Init radius 1.4776765539403063, Optimized: 1.4776765539403063
+Init radius 1.3822568291247166, Optimized: 1.3636363701420566
+Init radius 1.3459089268553024, Optimized: 1.3099999999999987
+Init radius 1.688247316005569, Optimized: 1.688247316005569
+Init radius 2.266541277908426, Optimized: 2.266541277908426
+Init radius 2.209779186471313, Optimized: 2.1353009906727953
+Init radius 2.476578859612852, Optimized: 2.0609395152954075
+Init radius 1.6896478406631432, Optimized: 1.6896478406631432
+Init radius 1.6778538202538797, Optimized: 1.45
+Init radius 1.3633085845831687, Optimized: 1.3299999999999972
+Init radius 1.3289477040124658, Optimized: 1.3289477040124658
+Init radius 1.484497445809474, Optimized: 1.4792261966354856
+Processing ball NO. 0
+Processing ball NO. 1
+Processing ball NO. 2
+Processing ball NO. 3
+Processing ball NO. 4
+Processing ball NO. 5
+Processing ball NO. 6
+Processing ball NO. 7
+Processing ball NO. 8
+Processing ball NO. 9
+Processing ball NO. 10
+Processing ball NO. 11
+Processing ball NO. 12
+Processing ball NO. 13
+Processing ball NO. 14
+
+
+=> caverdock.log.0
+#################################################################
+# If you used CaverDock in your work, please cite:              #
+#                                                               #
+# J. Filipovic et al.                                           #
+# CaverDock: A Novel Method for the Fast Analysis of Ligand     #
+# Transport. IEEE/ACM Transactions on Computational Biology and #
+# Bioinformatics. 2019.                                         #
+# DOI  10.1109/TCBB.2019.290749                                 #
+#                                                               #
+# O. Vavra et al.                                               #
+# CaverDock: A Molecular Docking-Based Tool to Analyse Ligand   #
+# Transport through Protein Tunnels and Channels.               #
+# Bioinformatics 2019.                                          #
+# DOI  10.1093/bioinformatics/btz386                            #
+#                                                               #
+#################################################################
+
+Version information: CaverDock 1.2 (May 2022)
+using docking engine based on AutoDock Vina 1.1.2
+git commit release
+Reading input ... done.
+
+EXPERIMENT SETUP
+Docking options
+  receptor          /home/user/input_0.pdbqt
+  flex              
+  ligand            /home/user/ligand.pdbqt
+  center_x          21.0557
+  center_y          35.0279
+  center_z          0.63864
+  size_x            14
+  size_y            13
+  size_z            15
+  out               analysis
+  exhaustiveness    1
+  cpu               1
+  log               caverdock.log.0
+Tunnel analysis options
+  tunnel                    /home/user/data/tunnel.dsd
+  final state               LB
+  optimization_strategy     MAX
+  dock_like                 
+  dock_like_limit           2
+  dump_bottlenecks          
+  dump_energies             
+  dump_energies_thr         6.52469e-310
+  backtrack_threshold       1
+  backtrack_limit           5
+  multiple_search        4
+  cont_threshold            0.8
+  radius_ratio              -1
+  pattern_limit             0.6
+  allow_flex_discontinuity  0
+  parallel_workers_lb       4
+  parallel_workers_smooth   4
+  early_exit                0
+Advanced and constrained docking options
+  score_only          0
+  local_only          0
+  randomize_only      0
+  weight_gauss1       -0.035579
+  weight_gauss2       -0.005156
+  weight_repulsion    0.840245
+  weight_hydrophobic  -0.035069
+  weight_hydrogen     -0.587439
+  weight_rot          0.05846
+  catomnum            1
+  ctemplate           
+  ctemplate_limit     0.5
+
+EXPERIMENT SETUP END
+Master up...
+STATE: 0
+STATE: 1
+TRAJECTORY: begining lower-bound computation.
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 1, assigned: 0
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 1
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 0
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 4, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 0
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 2
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 1, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 3, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 5, assigned: 5
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 2, assigned: 1
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 2, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 2
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 3, assigned: 3
+cScheduler::step(): conformations computed: 4, assigned: 4
+cScheduler::step(): conformations computed: 5, assigned: 4
+cScheduler::step(): conformations computed: 3, assigned: 3
+STATE: 1
+TRAJECTORY: lower-bound COMPUTED.
+STATE: 3
+Master is closing parallel session...
+cScheduler::finishWork(), number of WP's processed: 136, received snapshots: 363, asigned snapshots: 332
+
+=========================================
+CaverDock run summary
+
+CaverDock started on 2025-08-27 17:15:53 and ran on 583a7020-ade9-4d8e-b450-0e6c127e1931-n42hm with 2 MPI processes.
+LB computation took 0 hours, 1 minutes and 32 seconds.
+UB computation took 0 hours, 0 minutes and 0 seconds.
+Total computation time 0 hours, 1 minutes and 32 seconds.
+CaverDock execution has been successfully completed.
+
+
+=> caverdock.log.1
+#################################################################
+# If you used CaverDock in your work, please cite:              #
+#                                                               #
+# J. Filipovic et al.                                           #
+# CaverDock: A Novel Method for the Fast Analysis of Ligand     #
+# Transport. IEEE/ACM Transactions on Computational Biology and #
+# Bioinformatics. 2019.                                         #
+# DOI  10.1109/TCBB.2019.290749                                 #
+#                                                               #
+# O. Vavra et al.                                               #
+# CaverDock: A Molecular Docking-Based Tool to Analyse Ligand   #
+# Transport through Protein Tunnels and Channels.               #
+# Bioinformatics 2019.                                          #
+# DOI  10.1093/bioinformatics/btz386                            #
+#                                                               #
+#################################################################
+
+Version information: CaverDock 1.2 (May 2022)
+using docking engine based on AutoDock Vina 1.1.2
+git commit release
+Reading input ... done.
+Using random seed: 367273248
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+Analyzing the binding site ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.1      0.000      0.000
+   2          2.0      1.359      3.531
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.1      0.000      0.000
+   2          0.6      1.423      3.481
+   3          1.9      2.057      2.057
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.8      0.000      0.000
+   2          0.3      2.007      2.248
+   3          0.5      1.059      2.545
+   4          1.6      2.282      2.962
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.7      0.000      0.000
+   2         -0.1      1.127      2.202
+   3          0.4      2.182      2.280
+   4          0.4      2.175      3.068
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.3      0.000      0.000
+   2         -0.1      1.177      2.217
+   3          1.2      1.977      2.006
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.7      0.000      0.000
+   2         -0.5      1.362      2.194
+   3          0.4      2.051      2.194
+   4          2.1      2.153      2.153
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -1.1      0.000      0.000
+   2         -0.8      1.407      2.555
+   3          1.5      1.837      2.317
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.8      0.000      0.000
+   2         -0.7      1.077      2.376
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.2      0.000      0.000
+   2          0.1      0.725      3.502
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.3      0.000      0.000
+   2          0.1      1.285      3.450
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.4      0.000      0.000
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.3      0.000      0.000
+   2          0.0      0.742      3.464
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.3      0.000      0.000
+   2          2.3      1.518      3.334
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.4      0.000      0.000
+   2          0.0      0.697      3.472
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.4      0.000      0.000
+   2         -0.1      0.616      3.451
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.4      0.000      0.000
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.5      0.000      0.000
+   2          2.0      2.026      2.026
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.5      0.000      0.000
+   2          0.1      0.674      3.482
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.4      0.000      0.000
+   2          1.2      1.459      3.616
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.5      0.000      0.000
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.5      0.000      0.000
+   2         -0.4      0.483      3.425
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.4      0.000      0.000
+   2         -0.3      1.038      3.378
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.4      0.000      0.000
+   2          0.1      0.776      3.381
+   3          1.3      2.144      3.062
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.4      0.000      0.000
+   2         -0.1      1.028      3.351
+   3          0.4      2.145      2.992
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.5      0.000      0.000
+   2         -0.4      1.037      3.338
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.0      0.000      0.000
+   2          0.5      0.880      3.520
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1          0.0      0.000      0.000
+   2          0.1      1.179      3.460
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1          0.0      0.000      0.000
+   2          0.3      1.486      3.470
+   3          2.8      1.825      2.610
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.0      0.000      0.000
+   2          0.0      1.100      3.441
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1          0.1      0.000      0.000
+   2          0.2      1.310      3.497
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.3      0.000      0.000
+   2          0.1      1.974      2.090
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.2      0.000      0.000
+   2          0.3      2.030      2.030
+   3          2.5      1.529      3.546
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1          0.0      0.000      0.000
+   2          0.0      1.358      3.434
+   3          2.2      2.372      2.372
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.0      0.000      0.000
+   2          0.1      1.224      3.458
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1          0.1      0.000      0.000
+   2          0.5      1.355      3.566
+   3          2.2      1.908      2.023
+   4          3.0      1.738      2.792
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.8      0.000      0.000
+   2          0.1      2.436      3.069
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.9      0.000      0.000
+   2          0.8      1.575      2.039
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -1.0      0.000      0.000
+   2         -0.6      1.047      2.216
+   3          0.5      2.115      2.115
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1          0.1      0.000      0.000
+   2          0.1      1.414      3.517
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.0      0.000      0.000
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.0      0.000      0.000
+   2          0.9      1.397      3.631
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.1      0.000      0.000
+   2          0.2      1.032      3.411
+   3          1.1      1.997      2.255
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.2      0.000      0.000
+   2         -0.2      1.980      2.156
+   3          2.8      2.520      3.017
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.4      0.000      0.000
+   2         -0.2      1.018      3.361
+   3          0.8      2.112      2.951
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.4      0.000      0.000
+   2         -0.2      1.338      3.087
+   3          2.1      2.163      2.940
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.2      0.000      0.000
+   2         -0.0      1.243      3.254
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.5      0.000      0.000
+   2         -0.0      0.573      3.382
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.3      0.000      0.000
+   2          0.0      1.429      2.929
+   3          0.2      2.133      2.759
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.3      0.000      0.000
+   2          1.5      1.874      2.418
+   3          2.0      2.015      2.065
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.3      0.000      0.000
+   2         -0.1      1.456      2.963
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.3      0.000      0.000
+   2         -0.2      1.409      2.990
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.2      0.000      0.000
+   2         -0.1      1.653      3.377
+   3         -0.1      1.737      2.012
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.4      0.000      0.000
+   2         -0.1      1.868      2.025
+   3          0.1      1.827      2.355
+   4          1.8      1.524      3.143
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.4      0.000      0.000
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.4      0.000      0.000
+   2          2.1      1.262      3.159
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.4      0.000      0.000
+   2         -0.3      1.879      2.059
+   3         -0.3      1.959      2.227
+   4          1.6      1.443      3.187
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.8      0.000      0.000
+   2          0.4      1.917      2.043
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.6      0.000      0.000
+   2         -0.5      2.013      2.013
+   3         -0.0      1.621      3.371
+   4          0.7      1.978      2.314
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.7      0.000      0.000
+   2          0.1      1.905      2.012
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.7      0.000      0.000
+   2         -0.5      1.881      2.122
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -1.1      0.000      0.000
+   2         -0.1      2.234      3.269
+   3          0.5      1.905      2.105
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -1.0      0.000      0.000
+   2         -0.0      1.641      2.007
+   3          0.6      1.154      2.542
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -1.0      0.000      0.000
+   2         -0.7      1.940      2.018
+   3          0.2      2.281      3.189
+   4          0.2      0.977      2.540
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -1.0      0.000      0.000
+   2          0.1      1.285      2.191
+   3          1.3      1.658      3.138
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -1.5      0.000      0.000
+   2         -0.5      1.098      2.306
+   3          1.2      2.099      3.139
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -1.5      0.000      0.000
+   2         -0.4      1.661      2.709
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -1.5      0.000      0.000
+   2         -0.2      2.010      2.010
+   3          0.1      0.955      2.298
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -1.4      0.000      0.000
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -1.6      0.000      0.000
+   2         -0.2      1.810      3.291
+   3          0.1      1.445      2.859
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -1.7      0.000      0.000
+   2         -0.3      1.053      3.415
+   3         -0.3      1.988      2.664
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -1.7      0.000      0.000
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -1.8      0.000      0.000
+   2          0.8      2.091      2.410
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.1      0.000      0.000
+   2         -0.8      1.662      3.281
+   3          0.7      1.358      2.630
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -1.8      0.000      0.000
+   2         -0.2      2.023      3.358
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.0      0.000      0.000
+   2         -0.5      1.843      2.301
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.1      0.000      0.000
+   2         -0.4      1.422      3.284
+   3         -0.4      1.720      2.271
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.3      0.000      0.000
+   2         -0.6      1.383      3.204
+   3          0.4      1.994      2.040
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.2      0.000      0.000
+   2         -0.6      2.035      2.192
+   3         -0.5      1.289      3.109
+   4          0.3      2.088      2.088
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.1      0.000      0.000
+   2         -0.9      1.778      2.361
+   3         -0.6      1.376      3.144
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.0      0.000      0.000
+   2         -1.3      1.619      3.275
+   3         -0.4      1.457      2.141
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.3      0.000      0.000
+   2         -1.5      1.287      3.240
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.0      0.000      0.000
+   2         -1.1      0.982      3.251
+   3         -1.1      2.069      2.372
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.3      0.000      0.000
+   2         -1.3      1.495      3.286
+   3          0.2      1.869      2.364
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.3      0.000      0.000
+   2         -1.1      1.790      2.066
+   3         -0.7      1.850      3.345
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.4      0.000      0.000
+   2         -1.8      1.462      3.417
+   3         -1.6      1.877      2.274
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.2      0.000      0.000
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.4      0.000      0.000
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.2      0.000      0.000
+   2         -0.7      1.344      2.691
+   3         -0.6      1.794      2.024
+   4          0.5      2.218      3.202
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.4      0.000      0.000
+   2         -1.9      2.190      2.263
+   3         -1.8      1.184      3.347
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.4      0.000      0.000
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.4      0.000      0.000
+   2         -1.7      1.924      2.349
+   3         -1.3      2.005      3.482
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.4      0.000      0.000
+   2         -1.1      2.125      2.166
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.5      0.000      0.000
+   2         -1.7      0.999      2.544
+   3          0.2      2.215      2.278
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.4      0.000      0.000
+   2         -1.8      1.979      3.360
+   3          0.4      2.110      2.817
+   4          0.5      2.109      2.458
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.5      0.000      0.000
+   2         -0.0      2.034      2.034
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.5      0.000      0.000
+   2         -1.9      1.957      3.467
+   3         -1.3      1.733      2.146
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.6      0.000      0.000
+   2          0.2      2.165      2.165
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.5      0.000      0.000
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -0.7      2.277      2.277
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.5      0.000      0.000
+   2         -0.9      2.060      2.132
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.6      0.000      0.000
+   2         -2.0      1.879      2.331
+   3         -1.8      0.798      2.565
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.5      0.000      0.000
+   2         -2.4      1.000      2.709
+   3         -1.1      2.475      3.786
+   4         -0.9      2.148      2.148
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.6      0.000      0.000
+   2         -2.4      1.099      2.764
+   3         -0.3      1.969      2.136
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.5      0.000      0.000
+   2         -2.3      0.393      2.880
+   3         -0.8      2.013      2.013
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.6      0.000      0.000
+   2         -0.4      2.125      2.221
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.6      1.023      2.990
+   3         -2.0      1.877      2.248
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -0.9      1.923      2.051
+   3          0.1      2.247      2.247
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.8      0.000      0.000
+   2         -1.8      2.062      2.177
+   3         -0.8      2.605      2.605
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.6      0.000      0.000
+   2         -1.1      1.770      2.047
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.8      0.000      0.000
+   2         -2.1      2.218      2.304
+   3         -0.5      2.496      2.834
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.4      1.992      2.014
+   3         -1.5      2.254      2.254
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.5      1.097      3.013
+   3         -1.8      2.003      2.178
+   4         -1.7      2.366      2.366
+   5          0.3      2.043      2.043
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -1.5      1.976      2.164
+   3         -0.4      2.546      2.632
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -1.6      2.259      2.259
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.3      2.041      2.555
+   3         -2.2      0.719      3.017
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.5      0.680      2.980
+   3         -2.0      1.979      2.086
+   4         -1.8      2.096      2.096
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.6      0.000      0.000
+   2         -2.5      0.787      2.820
+   3         -2.1      1.992      2.048
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.6      0.410      3.148
+   3         -2.3      2.262      2.484
+   4         -0.1      1.976      1.976
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.6      0.000      0.000
+   2         -0.8      2.244      2.349
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.6      0.000      0.000
+   2         -2.0      2.126      2.161
+   3         -1.4      1.868      3.371
+   4         -0.4      3.010      3.102
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.6      0.999      2.934
+   3         -2.0      2.036      2.801
+   4         -1.5      1.962      2.459
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.7      2.010      2.043
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.6      0.000      0.000
+   2         -2.6      1.303      2.989
+   3         -2.0      1.778      2.727
+   4         -1.6      2.311      3.365
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -1.4      1.961      2.031
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.2      2.001      2.114
+   3         -1.9      2.032      2.837
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.8      0.000      0.000
+   2         -2.5      2.042      2.874
+   3         -1.2      1.681      2.321
+   4          0.1      1.792      2.979
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -1.4      1.995      2.082
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.6      1.559      2.701
+   3         -2.4      1.455      2.690
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.5      0.658      3.104
+   3         -1.8      2.133      2.292
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.6      1.810      2.930
+   3         -2.5      1.267      3.079
+   4          0.2      2.765      3.285
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.6      1.740      2.088
+   3         -0.7      2.657      2.811
+   4         -0.3      2.320      2.426
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.5      1.225      2.996
+   3         -2.1      2.188      2.188
+   4          0.1      2.429      2.488
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.8      0.000      0.000
+   2         -2.6      2.228      2.228
+   3         -0.1      2.097      2.097
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.7      1.369      2.734
+   3         -2.0      1.706      2.743
+   4         -0.9      1.619      3.542
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.6      0.000      0.000
+   2         -2.6      1.362      3.432
+   3         -2.6      1.997      2.528
+   4         -2.0      1.662      2.800
+   5         -1.2      2.244      3.061
+Writing output ... done.
+Server 1 up, waiting for work package...
+Setting up the scoring function ... done.
+
+Performing search ... done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -2.7      0.000      0.000
+   2         -2.7      1.751      2.064
+   3         -2.6      2.053      2.274
+Writing output ... done.
+Server 1 up, waiting for work package...
+Server 1 finished.
+
+
