@@ -1,3 +1,5 @@
+### This project is just me experimenting and testing stuff. Do not use this, Use CaverDock for this type of calculations
+
 Lower-Bound (Vina-based)
 ========================
 
